@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="color_primary">#6EDFEF</color>
+    <color name="color_primary_dark">#00C1DE</color>
+    <color name="color_accent">#da00de</color>
+    <color name="color_1">#D5F8FD</color>
+    <color name="color_2">#AAEDF9</color>
+    <color name="color_3">#6EDFEF</color>
+    <color name="color_4">#00C1DE</color>
+    <color name="color_5">#E1C0DD</color>
+    <color name="color_6">#debd00</color>
+    <color name="color_7">#da00de</color>
+
+    <!--蓝色主题-->
+    <color name="color_primary_blue">#73C4FF</color>
+    <color name="color_primary_dark_blue">#0095FF</color>
+    <color name="color_accent_blue">#ff002b</color>
+    <color name="color_1_blue">#DFF1FE</color>
+    <color name="color_2_blue">#B1DDFF</color>
+    <color name="color_3_blue">#73C4FF</color>
+    <color name="color_4_blue">#0095FF</color>
+    <color name="color_5_blue">#E195FF</color>
+    <color name="color_6_blue">#48ff00</color>
+    <color name="color_7_blue">#ff002b</color>
+
+    <!-- 绿色主题 -->
+    <color name="color_primary_green">#62D6B2</color>
+    <color name="color_primary_dark_green">#0FC18A</color>
+    <color name="color_accent_green">#860fc1</color>
+    <color name="color_1_green">#D6F2E9</color>
+    <color name="color_2_green">#9DE4CE</color>
+    <color name="color_3_green">#62D6B2</color>
+    <color name="color_4_green">#0FC18A</color>
+    <color name="color_5_green">#E1C089</color>
+    <color name="color_6_green">#c1680f</color>
+    <color name="color_7_green">#860fc1</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="bg_item_pressed">#eeeeee</color>
+    <color name="text_color_primary">#3a3a3a</color>
+    <color name="text_color_gray">#A9A9A9</color>
+    <color name="color_line">#dddddd</color>
 </resources>

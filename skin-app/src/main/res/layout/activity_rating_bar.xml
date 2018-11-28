@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="2.5" />
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:minHeight="@dimen/twenty_four"
+        android:progressDrawable="@drawable/rating_bar"
+        android:rating="2.5" />
+
+    <RatingBar
+        style="@style/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:minHeight="@dimen/twenty_four"
+        android:rating="2.5" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressDrawable="@drawable/rating_bar"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+
+    <RatingBar
+        style="@style/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:rating="2.5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:minHeight="@dimen/twenty_four"
+        android:progressDrawable="@drawable/rating_bar"
+        android:rating="2.5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        style="@style/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:minHeight="@dimen/twenty_four"
+        android:rating="2.5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressDrawable="@drawable/rating_bar"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        style="@style/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressBackgroundTint="@color/color_4"
+        android:progressTint="@color/color_6"
+        android:rating="2.5"
+        android:secondaryProgressTint="@color/color_5" />
+</LinearLayout>

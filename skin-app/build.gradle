@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
     implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
@@ -29,4 +29,13 @@ dependencies {
     androidTestImplementation "com.android.support.test:rules:$rootProject.rulesVersion"
     androidTestImplementation "com.android.support.test:runner:$rootProject.runnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
+    implementation project(':skin-support')
+    implementation project(':skin-support-appcompat')
+    implementation project(':skin-support-cardview')
+    implementation project(':skin-support-recyclerview')
+    implementation project(':skin-support-v4')
+    implementation project(':skin-support-constraint')
+    implementation project(':skin-support-design')
+    implementation project(':skin-support-third-part')
+    implementation files('src/main/libs/gson-2.8.5.jar')
 }

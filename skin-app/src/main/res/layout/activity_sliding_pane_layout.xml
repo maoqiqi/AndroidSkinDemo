@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <android.support.v4.widget.SlidingPaneLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_2" />
+        </android.support.v4.widget.SlidingPaneLayout>
+
+        <android.support.v4.widget.SlidingPaneLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/color_5"
+            android:padding="@dimen/sixteen">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_4" />
+        </android.support.v4.widget.SlidingPaneLayout>
+    </LinearLayout>
+</LinearLayout>

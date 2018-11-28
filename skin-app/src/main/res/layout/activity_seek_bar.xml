@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/sixteen"
+            android:paddingBottom="@dimen/sixteen">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumb="@drawable/ic_triangle" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumbTint="@color/color_5" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                app:thumbTint="@color/color_6" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumb="@drawable/ic_triangle"
+                android:thumbTint="@color/color_5" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/ic_star" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                app:tickMark="@drawable/ic_star" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMarkTint="@color/color_5" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                app:tickMarkTint="@color/color_5" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/ic_star"
+                app:tickMarkTint="@color/color_5" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMarkTint="@color/color_5"
+                app:tickMark="@drawable/ic_star" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_two"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumb="@drawable/ic_triangle" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumbTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                app:thumbTint="@color/color_6" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumb="@drawable/ic_triangle"
+                android:thumbTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/ic_star" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                app:tickMark="@drawable/ic_star" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMarkTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                app:tickMarkTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/ic_star"
+                android:tickMarkTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/ic_star"
+                app:tickMarkTint="@color/color_5" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMarkTint="@color/color_5"
+                app:tickMark="@drawable/ic_star" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                app:tickMark="@drawable/ic_star"
+                app:tickMarkTint="@color/color_5" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

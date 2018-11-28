@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1"
+        android:padding="@dimen/eight">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_triangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_rectangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_circle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_triangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_rectangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_circle" />
+    </GridLayout>
+</LinearLayout>

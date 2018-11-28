@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            android:inputType="text"
+            android:padding="@dimen/eight" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/eight"
+            android:selectAllOnFocus="true"
+            android:text="@string/text" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:hint="@string/hint"
+            android:inputType="text"
+            android:padding="@dimen/eight"
+            android:textColor="@color/color_4"
+            android:textColorHighlight="@color/color_5"
+            android:textColorHint="@color/color_6"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/ic_star"
+            android:textSelectHandleLeft="@drawable/ic_triangle"
+            android:textSelectHandleRight="@drawable/ic_rectangle" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="text"
+            android:padding="@dimen/eight"
+            android:selectAllOnFocus="true"
+            android:text="@string/text"
+            android:textColor="@color/color_4"
+            android:textColorHighlight="@color/color_5"
+            android:textColorHint="@color/color_6"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/ic_star"
+            android:textSelectHandleLeft="@drawable/ic_triangle"
+            android:textSelectHandleRight="@drawable/ic_rectangle" />
+    </LinearLayout>
+</LinearLayout>

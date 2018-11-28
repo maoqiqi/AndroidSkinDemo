@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:showText="true"
+                android:switchTextAppearance="@style/switch_text_appearance_1"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                android:track="@drawable/switch_track_1" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                app:showText="true"
+                app:switchTextAppearance="@style/switch_text_appearance_2"
+                app:track="@drawable/switch_track_2" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:showText="true"
+                android:switchTextAppearance="@style/switch_text_appearance_1"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                android:track="@drawable/switch_track_1"
+                app:showText="true"
+                app:switchTextAppearance="@style/switch_text_appearance_2"
+                app:track="@drawable/switch_track_2" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/switch_thumb_tint_1"
+                android:trackTint="@color/switch_track_tint_1" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:thumbTint="@color/switch_thumb_tint_2"
+                app:trackTint="@color/switch_track_tint_2" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/switch_thumb_tint_1"
+                android:trackTint="@color/switch_track_tint_1"
+                app:thumbTint="@color/switch_thumb_tint_2"
+                app:trackTint="@color/switch_track_tint_2" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb_1"
+                android:thumbTint="@color/switch_thumb_tint_1"
+                android:track="@drawable/switch_track_1"
+                android:trackTint="@color/switch_track_tint_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/off"
+                android:textOn="@string/on" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:showText="true"
+                android:switchTextAppearance="@style/switch_text_appearance_1"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                android:track="@drawable/switch_track_1" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                app:showText="true"
+                app:switchTextAppearance="@style/switch_text_appearance_2"
+                app:track="@drawable/switch_track_2" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:showText="true"
+                android:switchTextAppearance="@style/switch_text_appearance_1"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:thumb="@drawable/switch_thumb_1"
+                android:track="@drawable/switch_track_1"
+                app:showText="true"
+                app:switchTextAppearance="@style/switch_text_appearance_2"
+                app:track="@drawable/switch_track_2" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/switch_thumb_tint_1"
+                android:trackTint="@color/switch_track_tint_1" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:thumbTint="@color/switch_thumb_tint_2"
+                app:trackTint="@color/switch_track_tint_2" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/switch_thumb_tint_1"
+                android:trackTint="@color/switch_track_tint_1"
+                app:thumbTint="@color/switch_thumb_tint_2"
+                app:trackTint="@color/switch_track_tint_2" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb_2"
+                app:thumbTint="@color/switch_thumb_tint_2"
+                app:track="@drawable/switch_track_2"
+                app:trackTint="@color/switch_track_tint_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Switch 的 app 无效-->
+    <!--SwitchCompat 的除了 android:thumb 其它的都需要 app -->
+
+    <!--Switch android:showText 21 之前默认显示 21 默认不显示-->
+    <!--SwitchCompat 的 app:showText 默认不显示-->
+
+    <!--Switch的android:trackTint="" 会对颜色进行30%处理-->
+    <!--SwitchCompat的app:trackTint="" 而SwitchCompat显示填的的颜色-->
+</LinearLayout>

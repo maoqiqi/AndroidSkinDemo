@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_a_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <RadioButton
+            android:id="@+id/rb_b_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/b"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <RadioButton
+            android:id="@+id/rb_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/c"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <RadioButton
+            android:id="@+id/rb_d_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/d"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <RadioButton
+            android:id="@+id/rb_e_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/e"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+
+        <RadioButton
+            android:id="@+id/rb_f_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/f"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_a_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_b_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/b"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_c_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/c"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_d_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/d"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_e_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/e"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_f_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/f"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_a_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_b_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/b"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/c"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_d_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/d"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_e_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/e"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+
+        <CheckBox
+            android:id="@+id/cb_f_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/f"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_a_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_b_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/b"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_c_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/c"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_d_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/d"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_e_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:text="@string/e"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_f_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:text="@string/f"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button"
+            android:minWidth="80dp"
+            android:text="@string/a"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:minWidth="80dp"
+            android:text="@string/a"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button"
+            android:minWidth="80dp"
+            android:text="@string/a"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button"
+            android:buttonTint="@color/button_1"
+            android:minWidth="80dp"
+            android:text="@string/a"
+            android:textColor="@color/button_1"
+            android:textSize="@dimen/text_size_normal"
+            app:buttonTint="@color/button_2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/four">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:tint="@color/color_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_triangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            app:srcCompat="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_rectangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_rectangle"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="@color/color_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/four">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:tint="@color/color_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_triangle" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            app:srcCompat="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_1"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_rectangle" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_2"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_rectangle"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:background="@color/color_3"
+            android:contentDescription="@string/image"
+            android:padding="@dimen/four"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="@color/color_5" />
+    </LinearLayout>
+</LinearLayout>

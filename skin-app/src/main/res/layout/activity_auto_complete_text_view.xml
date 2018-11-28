@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <AutoCompleteTextView
+                android:id="@+id/act_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:text="@string/school_prefix" />
+
+            <AutoCompleteTextView
+                android:id="@+id/act_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupBackground="@color/color_4"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle" />
+
+            <AutoCompleteTextView
+                android:id="@+id/act_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupTheme="@style/auto_complete_text_view_popup_theme"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle"
+                app:popupTheme="@style/auto_complete_text_view_popup_theme" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/appcompat_act_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:completionThreshold="1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:text="@string/school_prefix" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/appcompat_act_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupBackground="@color/color_4"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/appcompat_act_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupTheme="@style/auto_complete_text_view_popup_theme"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle"
+                app:popupTheme="@style/auto_complete_text_view_popup_theme" />
+
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multi_act_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:completionThreshold="1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:text="@string/school_prefix" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multi_act_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupBackground="@color/color_4"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multi_act_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupTheme="@style/auto_complete_text_view_popup_theme"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle"
+                app:popupTheme="@style/auto_complete_text_view_popup_theme" />
+
+            <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+                android:id="@+id/appcompat_multi_act_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:completionThreshold="1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:text="@string/school_prefix" />
+
+            <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+                android:id="@+id/appcompat_multi_act_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupBackground="@color/color_4"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle" />
+
+            <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+                android:id="@+id/appcompat_multi_act_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="-8dp"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/eight"
+                android:popupTheme="@style/auto_complete_text_view_popup_theme"
+                android:text="@string/school_prefix"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSelectHandle="@drawable/ic_star"
+                android:textSelectHandleLeft="@drawable/ic_triangle"
+                android:textSelectHandleRight="@drawable/ic_rectangle"
+                app:popupTheme="@style/auto_complete_text_view_popup_theme" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

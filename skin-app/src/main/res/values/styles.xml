@@ -1,11 +1,102 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
     </style>
 
+    <style name="text_appearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_5</item>
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+    </style>
+
+    <style name="text_input_layout_hint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6</item>r
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="text_input_layout_counter" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_5</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="text_input_layout_counter_overflow" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="text_input_layout_error" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_7</item>
+    </style>
+
+    <style name="auto_complete_text_view_popup_theme" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:popupBackground">@color/color_5</item>
+        <item name="android:dropDownSelector">@drawable/bg_item_2</item>
+    </style>
+
+    <style name="switch_text_appearance_1" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6</item>
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+    <style name="switch_text_appearance_2" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_7</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="rating" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+    </style>
+
+    <style name="calendar_view_week_day" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_4</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <style name="calendar_view_week_day_green" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_4_green</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <style name="calendar_view_week_day_blue" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_4_blue</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <style name="calendar_view_date" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6</item>
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+    <style name="calendar_view_date_green" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6_green</item>
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+    <style name="calendar_view_date_blue" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_6_blue</item>
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <style name="spinner_popup_theme" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/color_5</item>
+        <item name="android:dropDownSelector">@drawable/bg_item_2</item>
+    </style>
+
+    <style name="title_text_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_7</item>
+    </style>
+    <style name="sub_title_text_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_6</item>
+    </style>
+
+    <style name="navigation_view" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_5</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="tab_layout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_5</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="collapsed_title_text_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_5</item>
+    </style>
+    <style name="expanded_title_text_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/color_4</item>
+    </style>
 </resources>

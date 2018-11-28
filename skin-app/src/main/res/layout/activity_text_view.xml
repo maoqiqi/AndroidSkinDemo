@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_triangle"
+                android:drawableRight="@drawable/ic_rectangle"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable_left_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable_start_end" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableLeft="@drawable/ic_triangle"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawableRight="@drawable/ic_rectangle"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sixteen"
+                android:text="@string/text_appearance"
+                android:textAppearance="@style/text_appearance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sixteen"
+                android:text="@string/text_color"
+                android:textAppearance="@style/text_appearance"
+                android:textColor="@color/color_4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="@dimen/sixteen"
+                android:text="@string/link" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="@dimen/sixteen"
+                android:text="@string/link"
+                android:textColorLink="@color/color_6" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_triangle"
+                android:drawableRight="@drawable/ic_rectangle"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable_left_right" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable_start_end" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableLeft="@drawable/ic_triangle"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawableRight="@drawable/ic_rectangle"
+                android:drawablePadding="@dimen/sixteen"
+                android:drawableTint="@color/color_4"
+                android:padding="@dimen/sixteen"
+                android:text="@string/drawable" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sixteen"
+                android:text="@string/text_appearance"
+                android:textAppearance="@style/text_appearance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sixteen"
+                android:text="@string/text_color"
+                android:textAppearance="@style/text_appearance"
+                android:textColor="@color/color_4" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="@dimen/sixteen"
+                android:text="@string/link" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="@dimen/sixteen"
+                android:text="@string/link"
+                android:textColorLink="@color/color_6" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

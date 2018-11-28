@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/province"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <Spinner
+                android:id="@+id/spinner_province_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:gravity="end"
+                android:popupBackground="@color/color_4"
+                android:prompt="@string/province"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/city"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <Spinner
+                android:id="@+id/spinner_city_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:gravity="end"
+                android:popupBackground="@color/color_4"
+                android:prompt="@string/city"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/district"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <Spinner
+                android:id="@+id/spinner_district_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:popupTheme="@style/spinner_popup_theme"
+                android:prompt="@string/district"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/province"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_province_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:gravity="end"
+                android:popupBackground="@color/color_4"
+                android:prompt="@string/province"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/city"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_city_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="@drawable/bg_item_1"
+                android:gravity="end"
+                android:popupBackground="@color/color_4"
+                android:prompt="@string/city"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/district"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_district_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:popupTheme="@style/spinner_popup_theme"
+                android:prompt="@string/district"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

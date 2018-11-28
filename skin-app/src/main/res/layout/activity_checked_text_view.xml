@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckedTextView
+            android:id="@+id/ctv_a_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_b_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/b"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/c"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_d_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/d"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_e_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="@drawable/button"
+            android:gravity="center_vertical"
+            android:text="@string/e"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_f_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="@drawable/button"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/f"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_a_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/a"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_b_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/b"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_c_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/c"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_d_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/d"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_e_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="@drawable/button"
+            android:gravity="center_vertical"
+            android:text="@string/e"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_f_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:checkMark="@drawable/button"
+            android:checkMarkTint="@color/button_1"
+            android:gravity="center_vertical"
+            android:text="@string/f"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+</LinearLayout>

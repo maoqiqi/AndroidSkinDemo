@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">AndroidSkinDemo</string>
+    <string name="drawable_left_right">drawableLeft | drawableRight</string>
+    <string name="drawable_start_end">drawableStart | drawableEnd</string>
+    <string name="drawable">drawable</string>
+    <string name="text_appearance">textAppearance</string>
+    <string name="text_color">textColor</string>
+    <string name="link">http://www.baidu.com</string>
+    <string name="hint">hint</string>
+    <string name="text">text</string>
+    <string-array name="schools">
+        <item>湖北工程学院</item>
+        <item>湖北经济学院</item>
+        <item>湖北理工学院</item>
+        <item>湖北文理学院</item>
+        <item>湖北科技学院</item>
+        <item>湖北民族学院</item>
+    </string-array>
+    <string name="school_prefix">湖北</string>
+    <string name="dis_enabled">dis_enabled</string>
+    <string name="enabled">enabled</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="off">关</string>
+    <string name="on">开</string>
+    <string name="image">image</string>
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="district">区</string>
+    <string name="hot">最热</string>
+    <string-array name="hot_data">
+        <item>网站维护公告</item>
+        <item>双11回馈活动产品利率增长0.05%</item>
+        <item>郑重公告</item>
+        <item>国家大数据发展纲要</item>
+    </string-array>
+    <string name="tab_1">Tab 1</string>
+    <string name="tab_2">Tab 2</string>
+    <string name="tab_3">Tab 3</string>
+    <string name="project_introduction">项目介绍</string>
+    <string name="update_description">更新说明</string>
+    <string name="scan_code">扫码下载</string>
+    <string name="problem_feedback">问题反馈</string>
+    <string name="about">关于</string>
+    <string name="donate">捐赠</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="mine">Mine</string>
+    <string name="title">title</string>
+    <string name="subtitle">subtitle</string>
+    <string name="application">Application</string>
 </resources>

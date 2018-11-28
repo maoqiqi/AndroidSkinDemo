@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <StackView
+            android:id="@+id/stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1" />
+
+        <AdapterViewFlipper
+            android:id="@+id/adapter_view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_2"
+            android:loopViews="true"
+            android:padding="@dimen/eight" />
+    </LinearLayout>
+</LinearLayout>

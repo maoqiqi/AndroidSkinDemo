@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:background="@color/color_1"
+                app:subtitle="@string/subtitle"
+                app:title="@string/title" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                app:collapseIcon="@drawable/ic_star"
+                app:contentInsetStartWithNavigation="0dp"
+                app:logo="@drawable/ic_rectangle"
+                app:navigationIcon="@drawable/ic_triangle"
+                app:subtitle="@string/subtitle"
+                app:subtitleTextAppearance="@style/sub_title_text_appearance"
+                app:title="@string/title"
+                app:titleTextAppearance="@style/title_text_appearance" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                app:collapseIcon="@drawable/ic_star"
+                app:contentInsetStartWithNavigation="0dp"
+                app:logo="@drawable/ic_rectangle"
+                app:navigationIcon="@drawable/ic_triangle"
+                app:subtitle="@string/subtitle"
+                app:subtitleTextColor="@color/color_4"
+                app:title="@string/title"
+                app:titleTextColor="@color/color_5" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                app:collapseIcon="@drawable/ic_star"
+                app:contentInsetStartWithNavigation="0dp"
+                app:logo="@drawable/ic_rectangle"
+                app:navigationIcon="@drawable/ic_triangle"
+                app:subtitle="@string/subtitle"
+                app:subtitleTextAppearance="@style/sub_title_text_appearance"
+                app:subtitleTextColor="@color/color_4"
+                app:title="@string/title"
+                app:titleTextAppearance="@style/title_text_appearance"
+                app:titleTextColor="@color/color_5" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                android:collapseIcon="@drawable/ic_star"
+                android:contentInsetStartWithNavigation="0dp"
+                android:logo="@drawable/ic_rectangle"
+                android:navigationIcon="@drawable/ic_triangle"
+                android:subtitleTextAppearance="@style/sub_title_text_appearance"
+                android:subtitleTextColor="@color/color_4"
+                android:titleTextAppearance="@style/title_text_appearance"
+                android:titleTextColor="@color/color_5"
+                app:subtitle="@string/subtitle"
+                app:title="@string/title" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/eight">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1"
+            android:clickable="true"
+            android:src="@drawable/ic_add" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:background="@color/color_2"
+            app:fabSize="auto" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:backgroundTint="@color/color_3"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/color_4"
+            app:fabSize="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/eight">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:fabSize="auto"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:fabSize="mini"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:fabSize="normal"
+            app:rippleColor="@color/color_6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/eight">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:background="@color/color_2"
+            app:fabSize="auto"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:backgroundTint="@color/color_3"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:fabSize="mini"
+            app:rippleColor="@color/color_6" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/color_4"
+            app:fabSize="normal"
+            app:rippleColor="@color/color_6" />
+    </LinearLayout>
+</LinearLayout>

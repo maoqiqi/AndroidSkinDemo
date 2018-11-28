@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="clock" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:headerBackground="@color/color_4"
+                android:numbersBackgroundColor="@color/color_1"
+                android:numbersInnerTextColor="@color/color_6"
+                android:numbersSelectorColor="@color/color_5"
+                android:numbersTextColor="@color/color_4"
+                android:timePickerMode="clock" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:headerBackground="@color/color_4"
+                android:numbersBackgroundColor="@color/color_1"
+                android:numbersInnerTextColor="@color/color_6"
+                android:numbersSelectorColor="@color/color_1"
+                android:numbersTextColor="@color/color_4"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

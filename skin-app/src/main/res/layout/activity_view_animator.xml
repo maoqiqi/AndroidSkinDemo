@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <ViewAnimator
+            android:id="@+id/view_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1" />
+
+        <ViewSwitcher
+            android:id="@+id/view_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_2" />
+
+        <TextSwitcher
+            android:id="@+id/text_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_3" />
+
+        <ImageSwitcher
+            android:id="@+id/image_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_4" />
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_6" />
+    </LinearLayout>
+</LinearLayout>

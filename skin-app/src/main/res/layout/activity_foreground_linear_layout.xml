@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/sixteen">
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="@color/color_4" />
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:foreground="@drawable/ic_circle"
+            android:foregroundTint="@color/color_5" />
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="@color/color_4"
+            android:foreground="@drawable/ic_circle"
+            android:foregroundTint="@color/color_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/sixteen">
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:background="@drawable/ic_rectangle"
+            app:backgroundTint="@color/color_4" />
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:foreground="@drawable/ic_circle"
+            android:foregroundTint="@color/color_5" />
+
+        <android.support.design.internal.ForegroundLinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:foreground="@drawable/ic_circle"
+            android:foregroundTint="@color/color_5"
+            app:background="@drawable/ic_rectangle"
+            app:backgroundTint="@color/color_4" />
+    </LinearLayout>
+</LinearLayout>

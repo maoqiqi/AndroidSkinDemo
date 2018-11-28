@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/twelve">
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:tint="@color/color_5" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_triangle" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_rectangle"
+            app:tint="@color/color_5" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_triangle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_rectangle" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_rectangle"
+            app:srcCompat="@drawable/ic_circle"
+            app:tint="@color/color_5" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/color_4"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="@color/color_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/twelve">
+
+        <android.support.design.widget.CheckableImageButton
+            android:id="@+id/checkable_image_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_password"
+            android:tint="@color/color_4" />
+
+        <android.support.design.widget.CheckableImageButton
+            android:id="@+id/checkable_image_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_password"
+            app:tint="@color/color_5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:textColorHint="@color/color_2" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--TextInputEditText 单独的 android:textColorHint="@color/color_2" 无效-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:textColorHint="@color/color_4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--TextInputLayout 的 android:textColorHint="@color/color_4"与-->
+            <!--TextInputEditText 的 android:hint="@string/hint" 和-->
+            <!--TextInputLayout 的 android:hint="@string/hint" 其中一个组合都可以-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:textColorHint="@color/color_4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:textColorHint="@color/color_2" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:textColorHint="@color/color_4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_name"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:textColorHint="@color/color_2" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--TextInputLayout 和 TextInputEditText 的-->
+            <!--android:hint="@string/hint" 和-->
+            <!--android:textColorHint="@color/color_4"-->
+            <!--属性同时存在,显示两个hint-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_two"
+                android:hint="@string/hint"
+                android:textColorHint="@color/color_4"
+                app:hintTextAppearance="@style/text_input_layout_hint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/app_name"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:textColorHint="@color/color_2" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:textColorHint="@color/color_4"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:counterOverflowTextAppearance="@style/text_input_layout_counter_overflow"
+                app:counterTextAppearance="@style/text_input_layout_counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/text_input_layout_error"
+                app:hintTextAppearance="@style/text_input_layout_hint"
+                app:passwordToggleDrawable="@drawable/ic_password"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/color_4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:drawableStart="@drawable/ic_triangle"
+                    android:drawableLeft="@drawable/ic_triangle"
+                    android:drawableTop="@drawable/ic_star"
+                    android:drawableEnd="@drawable/ic_rectangle"
+                    android:drawableRight="@drawable/ic_rectangle"
+                    android:drawableBottom="@drawable/ic_circle"
+                    android:drawablePadding="@dimen/eight"
+                    android:inputType="textPassword"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:textColorHint="@color/color_2" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

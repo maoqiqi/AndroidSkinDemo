@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/color_1"
+                app:menu="@menu/menu_navigation" />
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:background="@color/color_1"
+                app:menu="@menu/menu_navigation" />
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:itemBackground="@color/color_2"
+                app:menu="@menu/menu_navigation" />
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:itemBackground="@color/color_2"
+                app:menu="@menu/menu_navigation" />
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_1"
+                app:headerLayout="@layout/layout_navigation_header"
+                app:insetForeground="@color/color_5"
+                app:itemBackground="@drawable/bg_item_1"
+                app:itemIconTint="@color/color_4"
+                app:itemTextAppearance="@style/navigation_view"
+                app:itemTextColor="@color/color_4"
+                app:menu="@menu/menu_navigation" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/color_1"
+        android:fitsSystemWindows="true"
+        app:insetForeground="@color/color_5"
+        app:menu="@menu/menu_navigation">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:contentDescription="@string/image"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_2" />
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
