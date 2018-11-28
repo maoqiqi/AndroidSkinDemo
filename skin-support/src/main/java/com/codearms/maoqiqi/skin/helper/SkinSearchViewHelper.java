@@ -3,6 +3,8 @@ package com.codearms.maoqiqi.skin.helper;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ import java.lang.reflect.Field;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/9/17 11:11
  */
+@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class SkinSearchViewHelper extends SkinHelper<SearchView> {
 
     private int queryBackgroundResId = INVALID_RESOURCES;

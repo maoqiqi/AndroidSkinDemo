@@ -114,7 +114,9 @@ public class SkinSwitchHelper extends SkinHelper<Switch> {
             Field fTextColors = Switch.class.getDeclaredField(name);
             fTextColors.setAccessible(true);
             fTextColors.set(view, colorStateList);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -162,7 +164,9 @@ public class SkinSwitchHelper extends SkinHelper<Switch> {
         if (isDrawable(typeName)) {
             Drawable drawable = getDrawable(thumbResId);
             if (drawable == null) return;
-            view.setThumbDrawable(drawable);
+            if (IS_JELLY_BEAN) {
+                view.setThumbDrawable(drawable);
+            }
         }
     }
 
@@ -175,7 +179,9 @@ public class SkinSwitchHelper extends SkinHelper<Switch> {
         if (isDrawable(typeName)) {
             Drawable drawable = getDrawable(trackResId);
             if (drawable == null) return;
-            view.setTrackDrawable(drawable);
+            if (IS_JELLY_BEAN) {
+                view.setTrackDrawable(drawable);
+            }
         }
     }
 
@@ -188,7 +194,9 @@ public class SkinSwitchHelper extends SkinHelper<Switch> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(thumbTintResId);
             if (colorStateList == null) return;
-            view.setThumbTintList(colorStateList);
+            if (IS_MARSHMALLOW) {
+                view.setThumbTintList(colorStateList);
+            }
         }
     }
 
@@ -201,7 +209,9 @@ public class SkinSwitchHelper extends SkinHelper<Switch> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(trackTintResId);
             if (colorStateList == null) return;
-            view.setTrackTintList(colorStateList);
+            if (IS_MARSHMALLOW) {
+                view.setTrackTintList(colorStateList);
+            }
         }
     }
 

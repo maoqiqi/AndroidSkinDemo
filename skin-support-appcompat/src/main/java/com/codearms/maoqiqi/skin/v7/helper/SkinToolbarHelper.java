@@ -222,7 +222,9 @@ public class SkinToolbarHelper extends SkinHelper<Toolbar> {
             String name = "mCollapseIcon";
             Field fCollapseIcon = Toolbar.class.getDeclaredField(name);
             fCollapseIcon.set(toolbar, drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

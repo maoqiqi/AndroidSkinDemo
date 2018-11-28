@@ -57,7 +57,11 @@ public class SkinDatePickerHelper extends SkinHelper<DatePicker> {
             String name = "getMode";
             Method method = DatePicker.class.getMethod(name);
             return (int) method.invoke(view);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         return 0;
@@ -86,7 +90,9 @@ public class SkinDatePickerHelper extends SkinHelper<DatePicker> {
                 final ViewGroup header = container.findViewById(id);
                 ViewCompat.setBackground(header, drawable);
             }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -134,7 +140,9 @@ public class SkinDatePickerHelper extends SkinHelper<DatePicker> {
                 headerYear.setTextColor(colorStateList);
                 headerMonthDay.setTextColor(colorStateList);
             }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

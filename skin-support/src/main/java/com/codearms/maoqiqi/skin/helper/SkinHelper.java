@@ -2,6 +2,7 @@ package com.codearms.maoqiqi.skin.helper;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -33,6 +34,31 @@ public abstract class SkinHelper<T extends View> {
      * 资源类型名称mipmap
      */
     private static final String RES_TYPE_NAME_MIPMAP = "mipmap";
+
+    /**
+     * SDK版本是NOUGAT
+     */
+    protected static final boolean IS_NOUGAT = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N;
+
+    /**
+     * SDK版本是MARSHMALLOW
+     */
+    protected static final boolean IS_MARSHMALLOW = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M;
+
+    /**
+     * SDK版本是LOLLIPOP
+     */
+    protected static final boolean IS_LOLLIPOP = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;
+
+    /**
+     * SDK版本是JELLY_BEAN_MR1
+     */
+    protected static final boolean IS_JELLY_BEAN_MR1 = Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1;
+
+    /**
+     * SDK版本是JELLY_BEAN
+     */
+    protected static final boolean IS_JELLY_BEAN = Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
 
     /**
      * 当前View

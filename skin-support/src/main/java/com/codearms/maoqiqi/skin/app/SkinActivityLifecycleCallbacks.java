@@ -3,6 +3,7 @@ package com.codearms.maoqiqi.skin.app;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
+import android.support.v4.view.LayoutInflaterCompat;
 import android.view.LayoutInflater;
 
 import com.codearms.maoqiqi.skin.annotation.Skin;
@@ -141,17 +142,20 @@ public class SkinActivityLifecycleCallbacks implements Application.ActivityLifec
         // 判断是否已经LayoutInflater已经存在Factory
         if (inflater.getFactory() != null) {
             try {
+                String name = "mFactorySet";
                 // 通过反射得到mFactorySet这个私有属性
-                Field field = LayoutInflater.class.getDeclaredField("mFactorySet");
+                Field field = LayoutInflater.class.getDeclaredField(name);
                 // 值为true则指示反射的对象在使用时应该取消Java语言访问检查
                 field.setAccessible(true);
                 // 更改私有属性的值
                 field.setBoolean(inflater, false);
-            } catch (NoSuchFieldException | IllegalAccessException e) {
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (NoSuchFieldException e) {
                 e.printStackTrace();
             }
         }
-        inflater.setFactory2(getSkinLayoutInflaterFactory(activity));
+        LayoutInflaterCompat.setFactory2(inflater, getSkinLayoutInflaterFactory(activity));
     }
 
     /**

@@ -74,7 +74,9 @@ public class SkinCalendarViewHelper extends SkinHelper<CalendarView> {
         int id = getTargetResId(weekDayTextAppearanceResId);
         if (id == 0) id = weekDayTextAppearanceResId;
         isApplyWeekDayTextAppearance = false;
-        view.setWeekDayTextAppearance(id);
+        if (IS_JELLY_BEAN) {
+            view.setWeekDayTextAppearance(id);
+        }
     }
 
     /**
@@ -85,7 +87,9 @@ public class SkinCalendarViewHelper extends SkinHelper<CalendarView> {
         int id = getTargetResId(dateTextAppearanceResId);
         if (id == 0) id = dateTextAppearanceResId;
         isApplyDateTextAppearance = false;
-        view.setDateTextAppearance(id);
+        if (IS_JELLY_BEAN) {
+            view.setDateTextAppearance(id);
+        }
     }
 
     @Override

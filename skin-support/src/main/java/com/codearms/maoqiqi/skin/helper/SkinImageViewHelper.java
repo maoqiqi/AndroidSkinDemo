@@ -97,7 +97,9 @@ public class SkinImageViewHelper extends SkinHelper<ImageView> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(tintResId);
             if (colorStateList == null) return;
-            view.setImageTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setImageTintList(colorStateList);
+            }
         }
     }
 

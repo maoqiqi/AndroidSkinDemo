@@ -75,7 +75,9 @@ public class SkinCompoundButtonHelper extends SkinHelper<CompoundButton> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(buttonTintResId);
             if (colorStateList == null) return;
-            view.setButtonTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setButtonTintList(colorStateList);
+            }
         }
     }
 

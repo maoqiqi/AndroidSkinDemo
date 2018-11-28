@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.FrameLayout;
 
 import com.codearms.maoqiqi.skin.R;
 
@@ -122,7 +123,14 @@ public class SkinViewHelper extends SkinHelper<View> {
             drawable = getDrawable(foregroundResId);
         }
         if (drawable == null) return;
-        view.setForeground(drawable);
+        if (view instanceof FrameLayout) {
+            FrameLayout frameLayout = (FrameLayout) view;
+            frameLayout.setForeground(drawable);
+        } else {
+            if (IS_MARSHMALLOW) {
+                view.setForeground(drawable);
+            }
+        }
     }
 
     /**
@@ -134,7 +142,16 @@ public class SkinViewHelper extends SkinHelper<View> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(foregroundTintResId);
             if (colorStateList == null) return;
-            view.setForegroundTintList(colorStateList);
+            if (view instanceof FrameLayout) {
+                FrameLayout frameLayout = (FrameLayout) view;
+                if (IS_LOLLIPOP) {
+                    frameLayout.setForegroundTintList(colorStateList);
+                }
+            } else {
+                if (IS_MARSHMALLOW) {
+                    view.setForegroundTintList(colorStateList);
+                }
+            }
         }
     }
 
@@ -165,8 +182,13 @@ public class SkinViewHelper extends SkinHelper<View> {
             Class<?> clazz = scrollBar.getClass();
             Method method = clazz.getMethod(names[index], Drawable.class);
             method.invoke(scrollBar, drawable);
-        } catch (NoSuchFieldException | IllegalAccessException |
-                NoSuchMethodException | InvocationTargetException e) {
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

@@ -99,7 +99,9 @@ public class SkinProgressBarHelper extends SkinHelper<ProgressBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(progressTintResId);
             if (colorStateList == null) return;
-            view.setProgressTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setProgressTintList(colorStateList);
+            }
         }
     }
 
@@ -112,7 +114,9 @@ public class SkinProgressBarHelper extends SkinHelper<ProgressBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(secondaryProgressTintResId);
             if (colorStateList == null) return;
-            view.setSecondaryProgressTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setSecondaryProgressTintList(colorStateList);
+            }
         }
     }
 
@@ -125,7 +129,9 @@ public class SkinProgressBarHelper extends SkinHelper<ProgressBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(progressBackgroundTintResId);
             if (colorStateList == null) return;
-            view.setProgressBackgroundTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setProgressBackgroundTintList(colorStateList);
+            }
         }
     }
 
@@ -138,7 +144,9 @@ public class SkinProgressBarHelper extends SkinHelper<ProgressBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(indeterminateTintResId);
             if (colorStateList == null) return;
-            view.setIndeterminateTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setIndeterminateTintList(colorStateList);
+            }
         }
     }
 

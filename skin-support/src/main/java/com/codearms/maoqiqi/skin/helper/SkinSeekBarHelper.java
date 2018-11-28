@@ -79,7 +79,9 @@ public class SkinSeekBarHelper extends SkinHelper<SeekBar> {
             drawable = getDrawable(tickMarkResId);
         }
         if (drawable == null) return;
-        view.setTickMark(drawable);
+        if (IS_NOUGAT) {
+            view.setTickMark(drawable);
+        }
     }
 
     /**
@@ -91,7 +93,9 @@ public class SkinSeekBarHelper extends SkinHelper<SeekBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(thumbTintResId);
             if (colorStateList == null) return;
-            view.setThumbTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setThumbTintList(colorStateList);
+            }
         }
     }
 
@@ -104,7 +108,9 @@ public class SkinSeekBarHelper extends SkinHelper<SeekBar> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(tickMarkTintResId);
             if (colorStateList == null) return;
-            view.setTickMarkTintList(colorStateList);
+            if (IS_NOUGAT) {
+                view.setTickMarkTintList(colorStateList);
+            }
         }
     }
 

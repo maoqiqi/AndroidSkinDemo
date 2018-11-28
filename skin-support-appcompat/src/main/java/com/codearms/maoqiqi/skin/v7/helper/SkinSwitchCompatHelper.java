@@ -113,7 +113,9 @@ public class SkinSwitchCompatHelper extends SkinHelper<SwitchCompat> {
             Field fTextColors = SwitchCompat.class.getDeclaredField(name);
             fTextColors.setAccessible(true);
             fTextColors.set(switchCompat, colorStateList);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

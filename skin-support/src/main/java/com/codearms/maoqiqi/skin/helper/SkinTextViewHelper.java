@@ -4,6 +4,7 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.support.v4.widget.TextViewCompat;
 import android.util.AttributeSet;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -238,7 +239,9 @@ public class SkinTextViewHelper extends SkinHelper<TextView> {
             Field fCursorDrawable = editor.getClass().getDeclaredField("mCursorDrawable");
             fCursorDrawable.setAccessible(true);
             fCursorDrawable.set(editor, new Drawable[]{drawable});
-        } catch (IllegalAccessException | NoSuchFieldException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -280,7 +283,9 @@ public class SkinTextViewHelper extends SkinHelper<TextView> {
             Field fSelectHandle = editor.getClass().getDeclaredField(names[index]);
             fSelectHandle.setAccessible(true);
             fSelectHandle.set(editor, drawable);
-        } catch (IllegalAccessException | NoSuchFieldException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -379,7 +384,7 @@ public class SkinTextViewHelper extends SkinHelper<TextView> {
             String typeName = getTypeName(drawableBottomResId);
             if (isDrawable(typeName)) drawableBottom = getDrawable(drawableBottomResId);
         }
-        view.setCompoundDrawablesRelativeWithIntrinsicBounds(drawableStart, drawableTop, drawableEnd, drawableBottom);
+        TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(view, drawableStart, drawableTop, drawableEnd, drawableBottom);
     }
 
     /**
@@ -391,7 +396,9 @@ public class SkinTextViewHelper extends SkinHelper<TextView> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(drawableTintResId);
             if (colorStateList == null) return;
-            view.setCompoundDrawableTintList(colorStateList);
+            if (IS_MARSHMALLOW) {
+                view.setCompoundDrawableTintList(colorStateList);
+            }
         }
     }
 

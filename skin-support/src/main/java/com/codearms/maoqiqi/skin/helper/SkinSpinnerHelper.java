@@ -76,7 +76,9 @@ public class SkinSpinnerHelper extends SkinHelper<Spinner> {
             drawable = getDrawable(popupBackgroundResId);
         }
         if (drawable == null) return;
-        view.setPopupBackgroundDrawable(drawable);
+        if (IS_JELLY_BEAN) {
+            view.setPopupBackgroundDrawable(drawable);
+        }
     }
 
     /**
@@ -92,7 +94,9 @@ public class SkinSpinnerHelper extends SkinHelper<Spinner> {
             fPopup.setAccessible(true);
             ListPopupWindow popup = (ListPopupWindow) fPopup.get(view);
             popup.setListSelector(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

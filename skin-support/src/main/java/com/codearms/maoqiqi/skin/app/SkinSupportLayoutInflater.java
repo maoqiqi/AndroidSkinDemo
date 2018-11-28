@@ -1,6 +1,7 @@
 package com.codearms.maoqiqi.skin.app;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -96,7 +97,9 @@ public class SkinSupportLayoutInflater implements SkinLayoutInflater {
                 view = new SkinCheckedTextView(context, attrs);
                 break;
             case "TextClock":
-                view = new SkinTextClock(context, attrs);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    view = new SkinTextClock(context, attrs);
+                }
                 break;
             case "ProgressBar":
                 view = new SkinProgressBar(context, attrs);
@@ -192,7 +195,9 @@ public class SkinSupportLayoutInflater implements SkinLayoutInflater {
                 view = new SkinGridLayout(context, attrs);
                 break;
             case "Toolbar":
-                view = new SkinToolbar(context, attrs);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    view = new SkinToolbar(context, attrs);
+                }
                 break;
         }
         return view;

@@ -56,7 +56,11 @@ public class SkinTimePickerHelper extends SkinHelper<TimePicker> {
             String name = "getMode";
             Method method = TimePicker.class.getMethod(name);
             return (int) method.invoke(view);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         return 0;
@@ -87,7 +91,9 @@ public class SkinTimePickerHelper extends SkinHelper<TimePicker> {
                 ViewCompat.setBackground(radialTimePickerHeader, drawable);
                 ViewCompat.setBackground(textInputPickerHeader, drawable);
             }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -150,7 +156,9 @@ public class SkinTimePickerHelper extends SkinHelper<TimePicker> {
                 amLabel.setTextColor(colorStateList);
                 pmLabel.setTextColor(colorStateList);
             }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

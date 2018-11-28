@@ -75,7 +75,9 @@ public class SkinCheckedTextViewHelper extends SkinHelper<CheckedTextView> {
         if (isColor(typeName)) {
             ColorStateList colorStateList = getColorStateList(checkMarkTintResId);
             if (colorStateList == null) return;
-            view.setCheckMarkTintList(colorStateList);
+            if (IS_LOLLIPOP) {
+                view.setCheckMarkTintList(colorStateList);
+            }
         }
     }
 

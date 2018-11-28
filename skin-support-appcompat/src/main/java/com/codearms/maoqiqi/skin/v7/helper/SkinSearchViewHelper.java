@@ -3,6 +3,7 @@ package com.codearms.maoqiqi.skin.v7.helper;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
 import android.util.AttributeSet;
 import android.view.View;
@@ -76,8 +77,10 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             String name = "mSearchPlate";
             Field fSearchPlate = SearchView.class.getDeclaredField(name);
             View view = (View) fSearchPlate.get(searchView);
-            view.setBackground(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+            ViewCompat.setBackground(view, drawable);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -111,8 +114,10 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             String name = "mSubmitArea";
             Field fSubmitArea = SearchView.class.getDeclaredField(name);
             View view = (View) fSubmitArea.get(searchView);
-            view.setBackground(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+            ViewCompat.setBackground(view, drawable);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -147,7 +152,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             Field fSearchButton = SearchView.class.getDeclaredField(name);
             ImageView searchButton = (ImageView) fSearchButton.get(searchView);
             searchButton.setImageDrawable(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -181,7 +188,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             String name = "mSearchHintIcon";
             Field fSearchHintIcon = SearchView.class.getDeclaredField(name);
             fSearchHintIcon.set(searchView, drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -216,7 +225,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             Field fCloseButton = SearchView.class.getDeclaredField(name);
             ImageView closeButton = (ImageView) fCloseButton.get(searchView);
             closeButton.setImageDrawable(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -251,7 +262,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             Field fGoButton = SearchView.class.getDeclaredField(name);
             ImageView goButton = (ImageView) fGoButton.get(searchView);
             goButton.setImageDrawable(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -286,7 +299,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             Field fVoiceButton = SearchView.class.getDeclaredField(name);
             ImageView voiceButton = (ImageView) fVoiceButton.get(searchView);
             voiceButton.setImageDrawable(drawable);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }
@@ -321,7 +336,9 @@ public class SkinSearchViewHelper extends SkinHelper<SearchView> {
             String name = "mSuggestionCommitIconResId";
             Field fSuggestionCommitIconResId = SearchView.class.getDeclaredField(name);
             fSuggestionCommitIconResId.set(searchView, resId);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
     }

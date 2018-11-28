@@ -2,6 +2,7 @@ package com.codearms.maoqiqi.skin.app;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -105,7 +106,9 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2 {
                 return;
             }
         }
-        activity.getWindow().setStatusBarColor(SkinResourcesManager.getInstance().getStatusBarColor(activity));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            activity.getWindow().setStatusBarColor(SkinResourcesManager.getInstance().getStatusBarColor(activity));
+        }
     }
 
     /**

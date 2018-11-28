@@ -4,6 +4,8 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.widget.Toolbar;
 
@@ -16,6 +18,7 @@ import java.lang.reflect.Field;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/9/17 13:50
  */
+@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class SkinToolbarHelper extends SkinHelper<Toolbar> {
 
     private int titleTextAppearanceResId = INVALID_RESOURCES;
