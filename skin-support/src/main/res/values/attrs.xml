@@ -77,9 +77,10 @@
         <attr name="android:divider" />
     </declare-styleable>
     <declare-styleable name="SkinNumberPickerHelper">
-        <attr name="android:solidColor" />
-        <attr name="android:selectionDivider" />
-        <attr name="android:virtualButtonPressedDrawable" />
+        <!--都是隐藏属性-->
+        <!--<attr name="android:solidColor" />-->
+        <!--<attr name="android:selectionDivider" />-->
+        <!--<attr name="android:virtualButtonPressedDrawable" />-->
     </declare-styleable>
     <declare-styleable name="SkinSearchViewHelper">
         <attr name="android:queryBackground" />
