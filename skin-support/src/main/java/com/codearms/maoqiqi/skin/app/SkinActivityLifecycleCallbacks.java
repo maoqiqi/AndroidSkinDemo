@@ -53,7 +53,7 @@ public class SkinActivityLifecycleCallbacks implements Application.ActivityLifec
     }
 
     /**
-     * 初始化,单例模式,只需要初始化一次,已在{@link SkinManager#SkinManager}中初始化。
+     * 初始化,单例模式,只需要初始化一次,已在{@link SkinManager#initialize(Application)}中初始化。
      *
      * @param application the application
      */

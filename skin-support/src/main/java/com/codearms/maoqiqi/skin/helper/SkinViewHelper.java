@@ -4,10 +4,11 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.core.view.ViewCompat;
 
 import com.codearms.maoqiqi.skin.R;
 

@@ -1,7 +1,7 @@
 package com.codearms.maoqiqi.skin.constraint.widget;
 
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import android.util.AttributeSet;
 
 import com.codearms.maoqiqi.skin.helper.SkinViewHelper;

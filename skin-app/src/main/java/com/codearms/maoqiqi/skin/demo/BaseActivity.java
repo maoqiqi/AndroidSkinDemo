@@ -1,10 +1,10 @@
 package com.codearms.maoqiqi.skin.demo;
 
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.codearms.maoqiqi.skin.manager.SkinManager;
 
